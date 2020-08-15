@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyMeal</string>
+    <string name="navigation_drawer_open">Open menu</string>
+    <string name="navigation_drawer_close">Sluit menu</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigatie</string>
+    <string name="action_settings">Instellingen</string>
+
+    <string name="loading">Bezig met laden</string>
+    <string name="title_meals_by_category">Maaltijden voor %1$s</string>
+    <string name="title_meals_by_ingredient">Maaltijden voor %1$s</string>
+    <string name="meal_thumbnail_description">Thumbnail voor recept</string>
+    <string name="confirm_add_meal">Wil je dit toevoegen aan je opgeslagen maaltijden?</string>
+    <string name="confirm_remove_meal">Wil je dit verwijderen van je opgeslagen maaltijden?</string>
+    <string name="confirm_yes">Ja</string>
+    <string name="confirm_no">Nee</string>
+    <string name="meal_saved">Maaltijd opgeslagen!</string>
+
+    <string name="menu_random_meal">Willekeurige maaltijd</string>
+    <string name="menu_categories">Categorieen</string>
+    <string name="menu_meals_by_category">Maaltijden</string>
+    <string name="menu_ingredients">Ingredienten</string>
+    <string name="menu_meals_by_ingredient">Maaltijden</string>
+    <string name="menu_my_meals">Mijn maaltijden</string>
+
+    <string name="error_network">Geen internet verbinding</string>
+    <string name="error_no_meals">Geen maaltijden!</string>
+</resources>

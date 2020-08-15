@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_random_meal">
+
+    <fragment
+        android:id="@+id/nav_random_meal"
+        android:name="be.li.mymeal.ui.random.RandomMealFragment"
+        android:label="@string/menu_random_meal"
+        tools:layout="@layout/fragment_random_meal" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="be.li.mymeal.ui.category.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/categories_to_mealsByCategoryFragment"
+            app:destination="@id/nav_meals_by_category">
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_meals_by_category"
+        android:name="be.li.mymeal.ui.category.MealsByCategoryFragment"
+        android:label="@string/menu_meals_by_category"
+        tools:layout="@layout/fragment_meals_by_category">
+        <argument
+            android:name="category"
+            app:argType="string" />
+        <action
+            android:id="@+id/to_mealActivity"
+            app:destination="@id/mealActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ingredients"
+        android:name="be.li.mymeal.ui.ingredients.IngredientsFragment"
+        android:label="@string/menu_ingredients">
+        <action
+            android:id="@+id/categories_to_mealsByCategoryFragment"
+            app:destination="@id/nav_meals_by_ingredient">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_meals_by_ingredient"
+        android:name="be.li.mymeal.ui.ingredients.MealsByIngredientFragment"
+        android:label="@string/menu_meals_by_ingredient">
+        <argument
+            android:name="ingredient"
+            app:argType="string" />
+        <action
+            android:id="@+id/to_mealActivity"
+            app:destination="@id/mealActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_my_meals"
+        android:name="be.li.mymeal.ui.meals.MyMealsFragment"
+        android:label="@string/menu_my_meals" >
+        <action
+            android:id="@+id/to_mealActivity"
+            app:destination="@id/mealActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/mealActivity"
+        android:name="be.li.mymeal.ui.meals.MealActivity"
+        android:label="activity_meal"
+        tools:layout="@layout/activity_meal">
+        <argument
+            android:name="meal"
+            app:argType="string" />
+    </activity>
+
+</navigation>

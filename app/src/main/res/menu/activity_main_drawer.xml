@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_random_meal"
+            android:icon="@drawable/ic_random"
+            android:title="@string/menu_random_meal" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_categories"
+            android:title="@string/menu_categories" />
+        <item
+            android:id="@+id/nav_ingredients"
+            android:icon="@drawable/ic_ingredients"
+            android:title="@string/menu_ingredients" />
+        <item
+            android:id="@+id/nav_my_meals"
+            android:icon="@drawable/ic_my_meals"
+            android:title="@string/menu_my_meals" />
+    </group>
+</menu>
